@@ -1,0 +1,59 @@
+#%RAML 0.8
+
+title: TestFormBody
+version: v1
+baseUri: https://example.com
+
+/required/string:
+  post:
+    body:
+      application/x-www-form-urlencoded:
+        formParameters:
+          required_string:
+            required: true
+            type: string
+
+/required/number:
+  post:
+    body:
+      application/x-www-form-urlencoded:
+        formParameters:
+          required_number:
+            type: number
+            required: true
+
+/required/integer:
+  post:
+    body:
+      application/x-www-form-urlencoded:
+        formParameters:
+          required_integer:
+            type: integer
+            required: true
+
+/required/boolean:
+  post:
+    body:
+      application/x-www-form-urlencoded:
+        formParameters:
+          required_boolean:
+            type: boolean
+            required: true
+
+/nonrequired/mixed:
+  post:
+    body:
+      application/x-www-form-urlencoded:
+        formParameters:
+          non_required_string:
+            type: string
+            required: false
+          non_required_number:
+            type: number
+            required: false
+          non_required_integer:
+            type: integer
+            required: false
+          non_required_boolean:
+            type: boolean
+            required: false

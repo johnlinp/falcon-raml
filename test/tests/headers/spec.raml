@@ -1,0 +1,49 @@
+#%RAML 0.8
+
+title: TestHeaders
+version: v1
+baseUri: https://example.com
+
+/required/string:
+  get:
+    headers:
+      X-Required-String:
+        type: string
+        required: true
+
+/required/number:
+  get:
+    headers:
+      X-Required-Number:
+        type: number
+        required: true
+
+/required/integer:
+  get:
+    headers:
+      X-Required-Integer:
+        type: integer
+        required: true
+
+/required/boolean:
+  get:
+    headers:
+      X-Required-Boolean:
+        type: boolean
+        required: true
+
+/nonrequired/mixed:
+  get:
+    headers:
+      X-Non-Required-String:
+        type: string
+        required: false
+      X-Non-Required-Number:
+        type: number
+        required: false
+      X-Non-Required-Integer:
+        type: integer
+        required: false
+      X-Non-Required-Boolean:
+        type: boolean
+        required: false

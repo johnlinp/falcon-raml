@@ -1,0 +1,22 @@
+#%RAML 0.8
+
+title: TestNoJsonTranslator
+version: v1
+baseUri: https://example.com
+
+/basic/string:
+  post:
+    body:
+      application/json:
+        schema: |
+          {
+            "$schema": "http://json-schema.org/draft-03/schema",
+            "type": "object",
+            "required": true,
+            "properties": {
+              "some_string": {
+                "type:": "string",
+                "required": true
+              }
+            }
+          }

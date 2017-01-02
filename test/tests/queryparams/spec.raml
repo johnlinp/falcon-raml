@@ -1,0 +1,49 @@
+#%RAML 0.8
+
+title: TestQueryParams
+version: v1
+baseUri: https://example.com
+
+/required/string:
+  get:
+    queryParameters:
+      required_string:
+        type: string
+        required: true
+
+/required/number:
+  get:
+    queryParameters:
+      required_number:
+        type: number
+        required: true
+
+/required/integer:
+  get:
+    queryParameters:
+      required_integer:
+        type: integer
+        required: true
+
+/required/boolean:
+  get:
+    queryParameters:
+      required_boolean:
+        type: boolean
+        required: true
+
+/nonrequired/mixed:
+  get:
+    queryParameters:
+      non_required_string:
+        type: string
+        required: false
+      non_required_number:
+        type: number
+        required: false
+      non_required_integer:
+        type: integer
+        required: false
+      non_required_boolean:
+        type: boolean
+        required: false

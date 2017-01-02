@@ -1,0 +1,12 @@
+#%RAML 0.8
+
+title: TestTemplatedPath
+version: v1
+baseUri: https://example.com
+
+/templated/{some_id}:
+  get:
+    queryParameters:
+      required_string:
+        type: string
+        required: true

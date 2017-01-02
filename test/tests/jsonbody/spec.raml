@@ -1,0 +1,41 @@
+#%RAML 0.8
+
+title: TestJsonBody
+version: v1
+baseUri: https://example.com
+
+/simple/string:
+  post:
+    body:
+      application/json:
+        schema: |
+          {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object",
+            "properties": {
+              "some_string": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "some_string"
+            ]
+          }
+
+/malformed/schema:
+  post:
+    body:
+      application/json:
+        schema: |
+          {
+            "$schema": "http://json-schema.org/draft-04/schema#"
+            "type": "object"
+            "properties": {
+              "some_string": {
+                "type": "string"
+              }
+            }
+            "required": [
+              "some_string"
+            ]
+          }
