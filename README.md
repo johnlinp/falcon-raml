@@ -12,9 +12,9 @@ This is a [Falcon](https://falconframework.org/) middleware for parameter checki
 
 ## Install
 
-1. `git clone https://github.com/johnlinp/falcon-raml`
-1. `cd falcon-raml`
-1. `pip install .`
+```bash
+pip install falcon-raml
+```
 
 
 ## Usage
