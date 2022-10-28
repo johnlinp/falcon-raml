@@ -8,9 +8,9 @@ setup(name='falcon-raml',
     url='https://github.com/johnlinp/falcon-raml',
     license='New BSD License',
     install_requires=[
-        'falcon',
-        'ramlfications',
-        'jsonschema',
+        'falcon==1.1.0',
+        'ramlfications==0.1.9',
+        'jsonschema==4.16.0',
     ],
     packages=[
         'falconraml',
