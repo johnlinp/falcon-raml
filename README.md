@@ -1,4 +1,4 @@
-# Falcon RAML [![Build Status](https://travis-ci.org/johnlinp/falcon-raml.svg?branch=master)](https://travis-ci.org/johnlinp/falcon-raml)
+# Falcon RAML ![Python package](https://github.com/johnlinp/falcon-raml/actions/workflows/python-package.yml/badge.svg)
 
 This is a [Falcon](https://falconframework.org/) middleware for parameter checking using [RAML](http://raml.org/).
 
