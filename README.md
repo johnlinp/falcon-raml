@@ -13,7 +13,7 @@ This is a [Falcon](https://falconframework.org/) middleware for parameter checki
 ## Install
 
 ```bash
-pip install falcon-raml
+pip3 install falcon-raml
 ```
 
 
@@ -31,5 +31,5 @@ api = falcon.API(middleware=[
 
 ## Test
 
-1. `pip install tox`
+1. `pip3 install tox`
 1. `tox`
