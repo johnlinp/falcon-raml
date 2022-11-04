@@ -35,7 +35,8 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with tox
-      run: tox
+      run: |
+        cd foo && tox
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
       env:
@@ -45,4 +46,4 @@ jobs:
         args:
           -Dsonar.projectKey=johnlinp_falcon-raml
           -Dsonar.organization=johnlinp-github
-          -Dsonar.python.coverage.reportPaths=coverage.xml
+          -Dsonar.python.coverage.reportPaths=foo/coverage.xml
