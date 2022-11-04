@@ -46,5 +46,4 @@ jobs:
         args:
           -Dsonar.projectKey=johnlinp_falcon-raml
           -Dsonar.organization=johnlinp-github
-          -Dsonar.sources=foo
           -Dsonar.python.coverage.reportPaths=foo/coverage.xml
