@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='falcon-raml',
-    version='0.1.0',
+    version='0.1.1',
     description='Parameter checker middleware using RAML for Falcon',
     author='johnlinp',
     author_email='johnlinp@gmail.com',
